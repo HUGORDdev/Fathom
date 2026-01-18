@@ -1,6 +1,7 @@
 import { GlobeIcon, StarIcon } from "@phosphor-icons/react"
 import Link from "./Link"
 import { useState } from "react"
+import CreditCard from "./CreditCard"
 
 const Hero = () => {
     const [PlanMode, setPlanMode] = useState(true)
@@ -39,7 +40,7 @@ const Hero = () => {
                 </div>
 
             </nav>
-            <div className="px-20 mt-20 ">
+            <div className="px-20 mt-20  flex ">
                 {/* text  section */}
                 <div className="sm:w-1/2">
                     <div className="flex gap-4">
@@ -59,9 +60,9 @@ const Hero = () => {
                         </div>
                     </div>
                     <div className="mt-4 flex-col flex gap-4">
-                        <span className="w-5/6 font hanken font-bold leading-[0.9] text-6xl -tracking-[0.25] text-[#FFFEFB]"> 
-                            Money should follow 
-                            your rules not the 
+                        <span className="w-5/6 font hanken font-bold leading-[0.9] text-6xl -tracking-[0.25] text-[#FFFEFB]">
+                            Money should follow
+                            your rules not the
                             other way around. </span>
                         <p className="font-hanken text-[#FFFEFB]  font-light text-sm leading-[1.4] ">
                             A smart payment card that allows you to define, apply and view your financial rules in real time.
@@ -78,8 +79,12 @@ const Hero = () => {
                 </div>
 
                 {/* carte section */}
-                <div></div>
+                <div className="sm:w-1/2 flex justify-center items-center">
+                    <CreditCard />                {/* </div> */}
+                </div>
             </div>
+
+            {/* blansection  */}
 
         </div>
     )
