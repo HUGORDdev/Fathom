@@ -1,7 +1,23 @@
 @import "tailwindcss";
-@theme{
-    --font-hanken:"Hanken Grotesk", sans-serif;
+
+@theme {
+  --font-hanken: "Hanken Grotesk", sans-serif;
+  --animate-reveal: reveal 0.8s ease-out forwards;
+
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
 }
+
 @layer utilities {
   .animate-in {
     animation-fill-mode: both;
@@ -37,29 +53,5 @@
 
   .delay-300 {
     animation-delay: 300ms;
-  }
-}
-
-@keyframes slideInFromBottom {
-  from {
-    opacity: 0;
-    trasnform: translateY(1rem);
-  }
-
-  to {
-    opacity: 1;
-    trasnform: translateY(0);
-  }
-}
-
-@keyframes slideInFromTop {
-  from {
-    opacity: 0;
-    trasnform: translateY(-1rem);
-  }
-
-  to {
-    opacity: 1;
-    trasnform: translateY(0);
   }
 }
