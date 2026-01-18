@@ -1,11 +1,12 @@
 import { GlobeIcon, StarIcon } from "@phosphor-icons/react"
 import Link from "./Link"
-import { useState,useEffect } from "react"
+import { useState, useEffect } from "react"
 import CreditCard from "./CreditCard"
 
 const Hero = () => {
     const [PlanMode, setPlanMode] = useState(true)
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    
     useEffect(() => {
         if (isMenuOpen) {
             document.body.style.overflow = 'hidden';
@@ -18,6 +19,7 @@ const Hero = () => {
             document.body.style.overflow = 'unset';
         };
     }, [isMenuOpen]);
+
     return (
         <div className={` overflow-hidden h-screen flex flex-col  w-full bg-cover bg-no-repeat bg-center  ${PlanMode ? "bg-[url('/images/bg.png')]" : "brightness-75 transition-all duration-300 bg-[url('/images/bgb.png')]"}  `}>
 
@@ -133,7 +135,7 @@ const Hero = () => {
                                 <img src="./images/spotify.png" alt="#" />
                                 <img src="./images/uber.png" alt="#" />
                                 <img src="./images/upwork.png" alt="#" />
-
+quired
                             </div>
 
                         </div>
@@ -141,7 +143,7 @@ const Hero = () => {
                 </div>
 
                 {/* carte section  mt-40*/}
-                <div className="sm:w-1/2 sm:flex sm:mt-0  sm:mr-0 mt-60 mr-20 -rotate-45 sm:justify-center sm:items-center">
+                <div className="sm:w-1/2 sm:flex sm:mt-0  sm:mr-0 mt-60 mr-20 sm:rotate-0 -rotate-45 sm:justify-center sm:items-center">
                     <CreditCard planMode={PlanMode} />               {/* </div> */}
                 </div>
             </div>
