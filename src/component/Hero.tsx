@@ -39,25 +39,44 @@ const Hero = () => {
                 </div>
 
             </nav>
-            <div className="px-20 ">
+            <div className="px-20 mt-20 ">
                 {/* text  section */}
-                <div>
-                    <div className="text-white">
-                        <span className="font-hanken flex items-center gap-1 font-light text-sm">
-                            <span className="font-hanken font-bold text-base"> 4.7 </span>
-                            <StarIcon weight="fill" className="w-4 h-4 text-white" />
+                <div className="sm:w-1/2">
+                    <div className="flex gap-4">
+                        <div className="text-white">
+                            <span className="font-hanken flex items-center gap-1 font-light text-sm">
+                                <span className="font-hanken font-bold text-base"> 4.7 </span>
+                                <StarIcon weight="fill" className="w-4 h-4 text-white" />
 
-                            on App Store <span className="font-bold  text-sm leading-[1.4] "> 50.4K</span></span>
+                                on App Store <span className="font-bold  text-sm leading-[1.4] "> 50.4K</span></span>
+                        </div>
+                        <div className="text-white">
+                            <span className="font-hanken flex items-center gap-1 font-light text-sm">
+                                <span className="font-hanken font-bold text-base"> 4.8 </span>
+                                <StarIcon weight="fill" className="w-4 h-4 text-white" />
+
+                                on Play Store <span className="font-bold  text-sm leading-[1.4] "> 14.2k ratings</span></span>
+                        </div>
                     </div>
-                    <div className="text-white">
-                        <span className="font-hanken flex items-center gap-1 font-light text-sm">
-                            <span className="font-hanken font-bold text-base"> 4.8 </span>
-                            <StarIcon weight="fill" className="w-4 h-4 text-white" />
-
-                            on Play Store <span className="font-bold  text-sm leading-[1.4] "> 14.2k ratings</span></span>
+                    <div className="mt-4 flex-col flex gap-4">
+                        <span className="w-5/6 font hanken font-bold leading-[0.9] text-6xl -tracking-[0.25] text-[#FFFEFB]"> 
+                            Money should follow 
+                            your rules not the 
+                            other way around. </span>
+                        <p className="font-hanken text-[#FFFEFB]  font-light text-sm leading-[1.4] ">
+                            A smart payment card that allows you to define, apply and view your financial rules in real time.
+                        </p>
                     </div>
 
+                    <button type="button" className="mt-11 text-[#153F2A] font-hanken font-bold text-lg w-45 h-11.5 bg-[#A1E86F] rounded-xl" >
+                        Open an account
+                    </button>
+                    <div className="flex flex-col mt-22">
+                        <span className="font-hanken font-black  text-[#FFFEFB] leading-[1.4] text-2xl">+30.000</span>
+                        <span className="font-hanken font-light text-base text-[#FFFEFB] leading-[1.4] " >People use our solution daily</span>
+                    </div>
                 </div>
+
                 {/* carte section */}
                 <div></div>
             </div>
