@@ -33,7 +33,7 @@ const CreditCard = () => {
       {/* Carte 1 - La plus au premier plan (Vert foncé) */}
       <div className="absolute z-30 rounded-2xl p-[1.5px] 
                 bg-linear-to-br from-[#2E6A4E] to-[#0E2E1E] 
-                shadow-2xl box-border translate-y-10 ml-20 mt-20 rotate-5">
+                shadow-2xl box-border translate-y-10 ml-25 mt-20 rotate-4">
 
         <div className="w-108 h-66 rounded-2xl bg-[#153F2A] p-4 flex flex-col justify-between text-white box-border">
           <div className="flex items-center justify-end gap-2">

@@ -6,7 +6,7 @@ import CreditCard from "./CreditCard"
 const Hero = () => {
     const [PlanMode, setPlanMode] = useState(true)
     return (
-        <div className=" h-screen w-full bg-cover bg-no-repeat bg-center bg-[url('/images/bg.png')]  ">
+        <div className=" h-screen flex flex-col  w-full bg-cover bg-no-repeat bg-center bg-[url('/images/bg.png')]  ">
 
             <nav className="flex py-5 justify-between px-20  border-b-[0.2px] border-white/20 ">
                 <div className="flex  items-center gap-22">
@@ -59,7 +59,7 @@ const Hero = () => {
                                 on Play Store <span className="font-bold  text-sm leading-[1.4] "> 14.2k ratings</span></span>
                         </div>
                     </div>
-                    <div className="mt-4 flex-col flex gap-4">
+                    <div className="mt-5 flex-col flex gap-4">
                         <span className="w-5/6 font hanken font-bold leading-[0.9] text-6xl -tracking-[0.25] text-[#FFFEFB]">
                             Money should follow
                             your rules not the
@@ -84,8 +84,24 @@ const Hero = () => {
                 </div>
             </div>
 
-            {/* blansection  */}
+            {/* blansection  flex-1 flex flex-col */}
+            <div className="mx-20 mt-auto relative flex flex-col h-24">
+                
 
+                {/* Couche Arrière */}
+                <div className="absolute w-full h-full rounded-t-3xl z-10 -translate-y-16 scale-[0.84] bg-white/20 backdrop-blur-sm border-t border-white/10"></div>
+                {/* Couche Arrière */}
+                <div className="absolute w-full h-full rounded-t-3xl z-10 -translate-y-12 scale-[0.88] bg-white/40 backdrop-blur-sm border-t border-white/20"></div>
+                {/* Couche Arrière */}
+                <div className="absolute w-full h-full rounded-t-3xl z-10 -translate-y-8 scale-[0.92] bg-white/60 backdrop-blur-sm border-t border-white/30"></div>
+
+                {/* Couche Milieu */}
+                <div className="absolute w-full h-full rounded-t-3xl z-20 -translate-y-4 scale-[0.96] bg-white/80 backdrop-blur-md border-t border-white/40"></div>
+
+                {/* Couche Devant */}
+                <div className="relative z-30 w-full h-full bg-white rounded-t-3xl shadow-[0_-10px_40px_rgba(0,0,0,0.1)]">
+                </div>
+            </div>
         </div>
     )
 }
